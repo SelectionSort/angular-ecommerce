@@ -1,11 +1,12 @@
 <div class="detail-section">
     <div class="container-fluid">
 
-        <img src="{{ product.imageUrl }}" class="detail-img">
+        <img src="{{ product.imageUrl }}" class="detail-img" width="70%">
 
         <h3>{{ product.name }}</h3>
         <div class="price">{{ product.unitPrice | currency:'USD' }}</div>
-        <button (click)="addToCart()" class="btn btn-primary btn-sm">Add to cart</button>
+        <button (click)="addToCart()" class="button-64" role="button"><span class="text">Add
+            To Cart</span></button>
 
         <hr>
         <h4>Description</h4>
